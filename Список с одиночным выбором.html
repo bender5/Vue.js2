@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Список Select Vue.js</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+<div id="app">
+    <select v-model="user">
+        <option>Tom</option>
+        <option>Bob</option>
+        <option>Sam</option>
+    </select>
+    <span>Выбрано: {{user}}</span>
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            user:''
+        }
+    });
+</script>
+</body>
+</html>
